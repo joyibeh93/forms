@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Outfit:wght@300;400;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 50%;
+}
+
+.text {
+    color: #fff;
+    /* padding: 1.25rem; */
+}
+
+.text h1 {
+    font-size: 250%;
+    word-spacing: 3px;
+    font-weight: 700;
+    width: 21.875rem;
+    text-align: center;
+}
+
+.text p {
+    font-size: 80%;
+    margin-top: 1.25rem;
+    line-height: 2em;
+    word-spacing: 3px;
+    width: 25rem;
+}
+
+.box-blue {
+    background-color: hsl(248, 32%, 49%);
+    width: 25rem;
+    margin: 1.25rem 3.125rem;
+    padding: 0.5rem 0.9375rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.3125rem;
+    border: 1px solid hsl(248, 32%, 49%);
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.box-blue p {
+    font-size: 70%;
+    word-spacing: 2px;
+}
+
+.form-control {
+    background-color: #fff;
+    margin: 1.25rem 3.125rem;
+    padding: 1.875rem;
+    width: 25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.form-control div input {
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    margin: 0.625rem 0.125rem;
+    border-radius: 0.3125rem;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.form-control div input:focus {
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+
+.form-control small {
+    float: right;
+    font-size: 75%;
+    font-weight: 200px;
+    color: #bbb;
+    /* display: none; */
+}
+
+button {
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    margin: 0.625rem 0.3125rem;
+    background-color: hsl(154, 58%, 44%);
+    border: 2px solid hsl(154, 58%, 44%);
+    color: #fff;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+    background-color: hsl(154, 59%, 51%);
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0 0 hsl(154, 59%, 51%);
+    transform: translateY(2px);
+}
+
+.form-control p {
+    font-size: 55%;
+    color: hsl(246, 25%, 77%);
+    margin-left: 20px;
+}
+
+.form-control p span {
+    color: hsl(0, 43%, 49%);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: block;
+        overflow: scroll;
+        margin-top: 20px;
+    }
+    .text {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .text h1 {
+        font-size: 150%;
+        word-spacing: 3px;
+        width: 15.625rem;
+        margin: 0;
+    }
+    .text p {
+        font-size: 70%;
+        margin: 0.3125rem;
+        width: 15.625rem;
+        text-align: center;
+    }
+    .form {
+        margin-top: 30px;
+    }
+    .form-control small {
+        font-size: 55%;
+    }
+    .box-blue {
+        width: 15.625rem;
+        margin: 0.725rem 0rem;
+        padding: 0.3125rem;
+    }
+    .box-blue p {
+        font-size: 70%;
+        word-spacing: 2px;
+    }
+    .form-control {
+        margin: 0.625rem 0rem;
+        padding: 1.875rem;
+        width: 15.625rem;
+    }
+    .form-control div input {
+        padding: 0.625rem;
+        margin: 0.3125rem;
+    }
+    button {
+        font-size: 70%;
+    }
+    .form-control p {
+        text-align: center;
+        margin-top: 0.3125rem;
+    }
+}
